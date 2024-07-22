@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LOGO DA ABA -->
+    <link rel="icon" href="https://www.nba.com/safari-pinned-tab.svg" type="image/svg">
+
+    <!-- IMPORTANDO CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- IMPORTANDO JAVASCRIPT -->
+    <script src="src/js/script.js" defer></script>
+    
+    <!-- TÍTULO DA PÁGINA -->
+    <title>Cultura NBA</title>
+</head>
+<body>
+    <!-- INICIO CABEÇALHO DA PÁGINA -->
+    <header>
+
+        <!-- BANNER INICIAL DA PÁGINA -->
+        <div class="logo">
+            <a href="#"><img src="src/media/logo-nba.svg" alt="Logo NBA"></a>
+        </div>
+
+        <!-- INICIO MENU DESKTOP -->
+        <div class="menu-desktop">
+            <nav>
+                <ul>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#historia-da-liga">História da Liga</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#conferencias-e-franquias">Conferências e Franquias</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#draft">Draft</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#temporada-regular">Temporada Regular</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#playoffs">Playoffs</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#finais">Finais</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#maior-campeao">Maior Campeão</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#premios">Prêmios</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#all-star">ALL-STAR Game</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#collabs">COLLABS</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="btn-site-nba">
+                <li>
+                    <a href="https://www.nba.com/" target="_blank">Site Oficial NBA</a>
+                </li>
+            </div>
+            
+        </div>
+        <!-- FIM MENU DESKTOP -->
+            
+        
+        <!-- INICIO MENU MOBILE -->
+
+        <div class="btn-abrir-menu" id="btn-menu">
+            <img src="https://img.icons8.com/?size=25&id=36389&format=png&color=00ff95" alt="abrir menu">
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile" >
+            <div class="btn-fechar">
+                <img src="https://img.icons8.com/?size=25&id=8112&format=png&color=00ff95" alt="fechar menu">
+            </div>
+
+            <nav>
+                <ul>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#historia-da-liga">História da Liga</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#conferencias-e-franquias">Conferências e Franquias</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#draft">Draft</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#temporada-regular">Temporada Regular</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#playoffs">Playoffs</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#finais">Finais</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#maior-campeao">Maior Campeão</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#premios">Prêmios</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#all-star">ALL-STAR Game</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="#collabs">COLLABS</a>
+                        </li>
+                    </div>
+                    <div class="link-menu">
+                        <li>
+                            <a href="https://www.nba.com/" class="btn-site-nba-mobile">Site Oficial NBA</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
+        <!-- FIM MENU MOBILE -->
+
+    </header>
+    <!-- FIM CABEÇALHO DA PÁGINA -->
+
+    <!-- INICIO CONTEUDO DA PÁGINA -->
+    <main>
+
+        <!-- BOTOES PLAY/PAUSE  -->
+        <img class="btn-pause" id="btn-pause" src="https://img.icons8.com/?size=100&id=9987&format=png&color=000000" alt="botao pause">
+
+        <img class="btn-play" id="btn-play" src="https://img.icons8.com/?size=100&id=9978&format=png&color=000000" alt="botao play">
+
+        <audio autoplay id="audio" loop>
+            <source src="src/songs/Bow Wow, Fabolous, Fundisha, Jermaine Dupri - Basketball (Official Music Video) (320) completa.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- INICIO BANNER INICIAL DA PÁGINA -->
+        <section id="inicio">
+
+            <div class="banner-inicial-1"> <!-- div para gambiarra -->
+                <img src="src/media/banner-inicial.jpg" alt="" class="banner banner-inicial">
+            </div>
+
+        </section>
+        <!-- FIM BANNER INICIAL DA PÁGINA -->
+
+        <!-- INICIO HISTORIA DA LIGA -->
+        <section id="historia-da-liga" >
+
+            <!-- <div class="banner-site-2"> -->
+                <img src="src/media/banner-historia.png" alt="arte jogadores" class="banner banner-historia-liga">
+            <!-- </div> -->
+
+            <div class="content">
+
+                <h1>História da Liga</h1>
+
+                <span>
+                    <p>
+                        A NBA (National Basketball Association) surgiu em 1946 como a Basketball Association of America (BAA). Ela foi fundada por um grupo de proprietários de arenas de hóquei no gelo que buscavam preencher suas arenas durante a temporada de verão.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        Em 1949, a BAA fundiu-se com a National Basketball League (NBL), formando a NBA que conhecemos atualmente, que completou 78 anos de existência.
+                    </p>
+                </span>
+                
+                <span>
+                    <p>
+                        A liga cresceu rapidamente em popularidade, tornando-se o principal campeonato profissional de basquete nos Estados Unidos e no mundo. Times icônicos, como os Boston Celtics e os Los Angeles Lakers, contribuíram significativamente para sua história e legado.
+                    </p>
+                </span>
+                
+            </div>
+            
+        </section>
+        <!-- FIM HISTORIA DA LIGA -->
+
+        <!-- INICIO CONFERENCIAS E FRANQUIAS -->
+        <section id="conferencias-e-franquias">
+
+            <!-- <div class="banner-site-2"> -->
+                <img src="src/media/conferencia.jpg" alt="conferências" class="banner banner-conferencia">
+            <!-- </div> -->
+
+            
+            <div class="content">
+
+                <h1>Conferências e Franquias</h1>
+
+                <span>
+                    <p>
+                        A NBA se originou em 1946 com 11 times e, por meio de uma sequência de expansões, reduções e realocações de times, atualmente consiste em 30 times. Os Estados Unidos abrigam 29 times, e o outro está no Canadá.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        A atual organização da liga divide os 30 times em duas conferências, cada uma com três divisões de cinco times.
+                    </p>
+                </span>
+                
+                <span>
+                    <p>
+                        O alinhamento divisionário atual foi introduzido na temporada 2004-05, refletindo a distribuição da população dos Estados Unidos e do Canadá como um todo.
+                    </p>
+                </span>
+                
+            </div>
+        
+        </section>
+        <!-- FIM CONFERENCIAS E FRANQUIAS -->
+
+        <!-- INICIO DRAFT -->
+        <section id="draft">
+
+            <!-- <div class="banner-site-2"> -->
+                <img src="src/media/draft-2018.jpg" alt="draft 2018" class="banner banner-draft">
+            <!-- </div> -->
+
+            
+            <div class="content">
+
+                <h1>Draft</h1>
+
+                <span>
+                    <p>
+                        Antes do início da temporada, em meados de julho, a escolha dos novos jogadores do basquete profissional da NBA é feita em um evento anual chamado draft.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        As equipes com as piores campanhas na temporada anterior têm vantagem no sorteio que decide quem escolhe os primeiros do ranking elaborado durante o campeonato universitário.
+                    </p>
+                </span>
+                
+                <span>
+                    <p>
+                        Após o recrutamento, que é feito em duas fases, 60 jogadores são incorporados à NBA. No entanto, apenas aqueles selecionados com as melhores escolhas (primeira rodada) têm um contrato garantido.
+                    </p>
+                </span>
+                
+            </div>
+        
+        </section>
+        <!-- FIM DRAFT -->
+
+        <div class="banner-competicao">
+            <h1>Formato da Competição</h1>
+        </div>
+
+        <!-- INICIO TEMPORDA REGULAR -->
+        <section id="temporada-regular">
+
+            <!-- <div class="banner-site-2"> -->
+                <img src="src/media/banner-temporada.jpg" alt="times" class="banner banner-temporada-regular">
+            <!-- </div> -->
+
+            
+            <div class="content">
+
+                <h1>Temporada Regular</h1>
+
+                <span>
+                    <p>
+                        A temporada regular começa em meados de outubro e segue até meados de abril do ano seguinte.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        Cada time joga 82 jogos contra todos os outros, podendo enfrentar alguns times 3 ou 4 vezes.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        Contra times da mesma divisão, são sempre 4 jogos, enquanto, para as outras divisões, usa-se um sistema que depende de quantas vezes enfrentou aquele time nas temporadas anteriores.
+                    </p>
+                </span>
+                
+                <span>
+                    <p>
+                        Apesar disso, o sistema de pontuação que classifica para os playoffs é válido apenas para as equipes da mesma conferência.
+                    </p>
+                </span>
+                
+            </div>
+        
+        </section>
+        <!-- FIM TEMPORDA REGULAR -->
+
+        <!-- INICIO PLAYOFFS -->
+        <section id="playoffs">
+
+            <!-- <div class="banner-site-2"> -->
+                <img src="src/media/banner-playoffs.webp" alt="playoffs" class="banner banner-playoffs">
+            <!-- </div> -->
+
+            
+            <div class="content">
+
+                <h1>Playoffs</h1>
+
+                <span>
+                    <p>
+                        Os playoffs são disputados em séries "melhor de sete" e compostos por 8 times de cada conferência. O primeiro colocado de cada conferência enfrenta o último, o segundo enfrenta o penúltimo, o terceiro enfrenta o antepenúltimo, e assim sucessivamente.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        Os três campeões de divisão têm direito a ficar entre os quatro primeiros para garantir mais jogos em casa. No entanto, um time que tenha ficado em segundo na sua divisão, mas com um resultado melhor que o líder de outra, pode ter um posicionamento superior.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        Os jogos são realizados da seguinte maneira: os dois primeiros na cidade do time de melhor campanha, seguidos por dois jogos na cidade do outro time. Caso sejam necessárias outras partidas, elas serão disputadas alternadamente entre as cidades, com o time de melhor campanha sendo favorecido.
+                    </p>
+                </span>
+                
+            </div>
+        
+        </section>
+        <!-- FIM PLAYOFFS -->
+            
+        <!-- INICIO FINAIS -->
+        <section id="finais">
+
+            <!-- <div class="banner-site-2"> -->
+                <img src="src/media/final-nba.png" alt="finais" class="banner banner-finais">
+            <!-- </div> -->
+
+            
+            <div class="content">
+
+                <h1>Finais</h1>
+
+                <span>
+                    <p>
+                        As finais da NBA são realizadas sempre em meados de junho. Elas são disputadas pelo campeão da Conferência Leste contra o campeão da Conferência Oeste. Assim como os playoffs, as finais também são disputadas em uma série "melhor de sete".
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        O time com a melhor campanha na temporada regular tem a vantagem no mando de quadra, jogando as duas primeiras partidas em casa e, se necessário, os jogos cinco e sete.
+                    </p>
+                </span>
+                
+            </div>
+        
+        </section>
+        <!-- FIM FINAIS -->
+
+        <!-- INICIO MAIOR CAMPEAO -->
+        <section id="maior-campeao">
+
+            <div class="boston">
+                <img src="src/media/tatum-campeao.avif" alt="boston campeão" class="banner banner-maior-campeao">
+
+                <p> Boston Celtics é campeão da temporada 2023/24 na NBA — Foto: Getty Images </p>
+            </div>
+
+            
+            <div class="content">
+
+                <h1>Maior Campeão</h1>
+
+                <span>
+                    <p>
+                        O dia 17 de junho vai ficar marcado como a data mais importante do século para os Celtics. Assim como aconteceu há exatos 16 anos - quando a equipe conquistou o 17º título em cima dos Lakers-, a franquia de Boston foi campeã ao lado da torcida no TD Garden, desta vez em cima dos Mavericks.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        O time de Dallas não conseguiu levar a disputa para o jogo 6, nesta segunda-feira, e os Celtics cravaram o título da NBA por 106 a 88 e fecharam em 4 a 1 a série da final da maior liga de basquete do mundo. Jaylen Brown foi coroado como o MVP das finais.
+                    </p>
+                </span>
+
+                <a href="https://ge.globo.com/basquete/nba/noticia/2024/06/18/boston-celtics-e-campeao-da-nba-e-conquista-o-18o-titulo-na-historia.ghtml" target="_blank"><p>Fonte: ge.com</p></a>
+                
+                
+            </div>
+        
+        </section>
+        <!-- FIM MAIOR CAMPEAO -->
+
+        <!-- INICIO PREMIOS -->
+        <section id="premios">
+
+            <!-- <div class="banner-site-2"> -->
+                <img src="src/media/banner-premios.webp" alt="premios" class="banner banner-premios">
+            <!-- </div> -->
+
+            
+            <div class="content">
+
+                <h1>Prêmios</h1>
+
+                <span>
+                    <p>
+                        Na NBA, existem vários prêmios concedidos anualmente para reconhecer o desempenho individual dos jogadores, técnicos e equipes. Alguns dos principais prêmios incluem:
+                    </p>
+                </span>
+
+                <span>
+                    <ul>
+                        <li>
+                            1. MVP (Most Valuable Player): Premia o jogador mais valioso da temporada regular da NBA.
+                        </li>
+                        <li>
+                            2. Rookie of the Year: Premia o melhor jogador estreante na temporada.
+                        </li>
+                        <li>
+                            3. Defensive Player of the Year: Premia o melhor defensor da temporada.
+                        </li>
+                        <li>
+                            4. Sixth Man of the Year: Premia o melhor jogador que atua principalmente como reserva.
+                        </li>
+                        <li>
+                            5. Most Improved Player: Premia o jogador que mais evoluiu em comparação com a temporada anterior.
+                        </li>
+                        <li>
+                            6. Coach of the Year: Premia o melhor técnico da temporada.
+                        </li>
+                    </ul>
+                </span>
+
+                <span>
+                    <p>
+                        Além desses principais prêmios individuais, há outros reconhecimentos, como o prêmio para o jogador com melhor desempenho nas finais (NBA Finals MVP) e para o melhor novato do All-Star Game (NBA All-Star Game MVP). Esses prêmios são altamente valorizados na NBA e refletem conquistas significativas ao longo da temporada.
+                    </p>
+                </span>
+                
+            </div>
+        
+        </section>
+        <!-- FIM PREMIOS -->
+
+        <!-- INICIO ALL-STAR GAME -->
+        <section id="all-star">
+
+            <div class="banners-all-star">
+                <img src="src/media/1998.png" alt="all-star" class="banner banner-">
+                <img src="src/media/2000.png" alt="all-star" class="banner banner-">
+                <img src="src/media/2008.png" alt="all-star" class="banner banner-">
+                <img src="src/media/2013.png" alt="all-star" class="banner banner-">
+                <img src="src/media/2024.png" alt="all-star" class="banner banner-">
+            </div>
+
+            
+            <div class="content">
+
+                <h1>All-Star Game</h1>
+
+                <span>
+                    <p>
+                        Desde 1951, é realizado um jogo amigável chamado NBA All-Star Game. Ele é disputado após um draft feito pelos capitães dos respectivos times através do voto popular, resultando em um confronto entre o time de um capitão contra o outro.
+                    </p>
+                </span>
+
+                <span>
+                    <p>
+                        O All-Star Game marca tradicionalmente a metade da temporada regular da liga e é disputado em três dias. Na história, a Conferência Leste venceu 37 vezes o All-Star Game, contra 29 vitórias da Conferência Oeste.
+                    </p>
+                </span>
+                
+            </div>
+        
+        </section>
+        <!-- FIM ALL-STAR GAME -->
+
+        <!-- INICIO COLLABS -->
+        <section id="collabs">
+
+            <!-- <div class="banner-site-2"> -->
+                <img src="src/media/collabs.jpg" alt="">
+            <!-- </div> -->
+
+            
+            <div class="content">
+
+                <h1>Parceirias</h1>
+
+                <span>
+                    <p>
+                        As maiores parcerias da NBA são geralmente com empresas e marcas globais que têm um impacto significativo no mundo dos esportes, entretenimento e estilo de vida. Algumas das parcerias mais importantes incluem:
+                    </p>
+                </span>
+                
+            </div>
+        
+        </section>
+        <!-- FIM COLLABS -->
+
+        <section id="inicio">
+
+            <div class="banner-inicial-1"> <!-- div para gambiarra -->
+                <img src="src/media/banner-final.jpg" alt="" class="banner banner-inicial">
+            </div>
+
+        </section>
+    </main>
+    <!-- FIM CONTEUDO DA PÁGINA -->
+
+    <!-- INICIO RODAPÉ DA PÁGINA -->
+    <footer>
+        <p>Desenvolvido por <br> Daniel Batista e Pedro Henrique <br> © 2024 - Todos os direitos reservados</p>
+    </footer>
+    <!-- FIM RODAPÉ DA PÁGINA -->
+</body>
+</html>

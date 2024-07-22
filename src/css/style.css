@@ -1,0 +1,867 @@
+/* IMPORTANDO FONTE DE TEXTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+/* DECLARACAO DE VARIAVEIS */
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --color-section-1: #2d1deb;
+     --color-section-2: #e4d30e; /* texto azul */
+    --color-section-3: #ff0000; /* back red texto branco */
+    --color-section-4: #294189; /* back blue texto orange */
+    --color-section-5: #ff9100; 
+    --color-section-6: #6c09adec; /* back purple texto white */
+    --color-section-7: #e6ecf5; 
+    --color-section-8: #6199ec; 
+    --color-section-9: #1d7446; /* back green texto white */
+    --color-section-10: #ff8800; /* back orange texto white */
+    --color-section-11: #6e243b;    
+    --color-text-primary: #faecb0; /* #f4f5dd */  
+    --color-text-orange: #f6bb34;     
+    --color-text-blue: #1b3f8c;     
+    --color-text-cavs: #b2995c;     
+    --color-btn-nba: #fbcd44;
+}
+
+/* all star clev */
+/* collabs nets */
+
+/* DECLARACAO DE ESTILOS */
+
+/* FORMATACOES PADRAO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* CABECALHO */
+header {
+    display: flex;
+    width: 100%; 
+    height: 60px; 
+    position: fixed; 
+    top: 0; 
+    background-color: var(--color-black); 
+    text-align: center; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 2rem; 
+}
+
+/* BOTOES PLAY E PAUSE */
+.btn-play {
+    display: none;
+}
+.btn-play, .btn-pause { 
+    position: fixed;
+    left: 0;
+    margin-left: 15px;
+    padding: 3px;
+    border-spacing: 50px;
+    margin-top: 70px;
+    width: 50px;
+    border-radius: 30%;
+    border: 3px solid var(--color-black);
+}
+
+
+/* MENU DO CABECALHO */
+.menu-desktop {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;    
+    padding: 2px;
+}
+
+.menu-desktop nav ul, .btn-site-nba {
+    display: flex; 
+    gap: 2rem; 
+    font-size: 14px; 
+    font-weight: 600;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/* LINKS NO MENU DO CABECALHO */
+.menu-desktop nav ul li a {
+    color: var(--color-text-primary); 
+}
+.menu-desktop .link-menu a:hover {
+    background-color: var(--color-btn-nba);
+    color: var(--color-black);
+    border-radius: 5px;
+    padding: 7px;
+    transition: .2s step-start;
+    border-bottom: none; 
+}
+
+/* BOTAO SITE NBA */
+.btn-site-nba {
+    background-color: var(--color-btn-nba);
+    border-radius: 5px;
+    padding: 7px;
+}
+.menu-desktop, .btn-site-nba a {
+    color: var(--color-black);
+}
+.menu-desktop, .btn-site-nba a:hover {
+    transition: .2s step-start;
+    font-weight: 900;
+}
+
+/* MENU MOBILE */
+.menu-mobile {
+    background-color: var(--color-black);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .3s ease-in;
+}
+/* .menu-mobile.abrir-menu {
+    width: 75%;
+} */
+
+.menu-mobile.abrir-menu {
+    width: 350px;
+}
+ .menu-mobile.abrir-menu ~ .overlay-menu { /* ~ */
+    display: block;
+}
+.menu-mobile nav ul li a {
+    display: block;
+    text-align: right;
+    gap: 2rem; 
+    font-size: 14px; 
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    padding: 20px 10%;
+    color: var(--color-text-primary);
+
+}
+.menu-mobile nav ul li a:hover {
+    background-color: var(--color-btn-nba);
+    font-size: 18px;
+    color: var(--color-black);
+}
+.btn-fechar {
+    margin: 20px;
+    text-align: left;
+}
+.overlay-menu {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 88888;
+    background-color: var(--color-black);
+    opacity: 35%;
+    display: none;
+}
+
+/* MAIN - h1 GERAL*/
+main h1 {
+    text-align: start;
+}
+
+/* MAIN - BANNER INICIAL*/
+main section .banner-inicial {
+    width: 100%; 
+    height: auto; 
+    margin-top: 60px; 
+}
+
+/* GAMBIARRA - xD */
+main section .banner-inicial-1 {
+    background-color: var(--color-section-1);
+}
+
+/* MAIN - BANNER HISTORIA */
+main section .banner {
+    width: 100%; 
+    height: auto; 
+}
+
+/* SECAO DA HISTORIA DA LIGA */
+main section#historia-da-liga {
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: var(--color-section-2);
+}
+main section#historia-da-liga .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 100px 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    color: var(--color-text-blue);
+}
+main section#historia-da-liga .content h1 {
+    font-size: 36px;
+    color: var(--color-black);
+    /* padding-left: 2%; */
+}
+main section#historia-da-liga .content span p {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--color-text-blue);
+}
+main section .banner-historia-liga {
+    width: 50%;
+}
+
+/* SECAO DA CONFERENCIA DA LIGA */
+main section#conferencias-e-franquias {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: var(--color-section-3);
+}
+main section#conferencias-e-franquias .content {
+    display: grid;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 100px 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: 800px;
+}
+main section#conferencias-e-franquias .content h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--color-white);
+    -webkit-text-stroke-color: var(--color-black);
+    -webkit-text-stroke-width: 1px;
+    /* padding-left: 2%; */
+}
+main section#conferencias-e-franquias .content span p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+main section#conferencias-e-franquias .banner-conferencia {
+    border-radius: 20px;
+}
+main section .banner-conferencia {
+    width: 20%;
+    margin: 120px 0;
+}
+
+/* SECAO DRAFT */
+main section#draft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: var(--color-section-4);
+}
+main section#draft .content {
+    display: grid;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 100px 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: 800px;
+}
+main section#draft .content h1 {
+    font-size: 36px;
+    /* padding-left: 2%; */
+}
+main section#draft .content span p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-orange);
+}
+main section#draft .banner-draft {
+    border-radius: 20px;
+    
+}
+main section .banner-draft {
+    width: 50%;
+    margin: 120px 0;
+}
+
+/* FORMATO DA COMPETICAO */
+main .banner-competicao {
+    display: flex;
+    background-color: var(--color-section-5);
+    width: 100%;
+    height: 80px;
+    font-family: "Graduate", serif;
+    text-align: center;align-items: center;
+    justify-content: center;
+}
+
+/* SECAO TEMPORDA REGULAR */
+main section#temporada-regular {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: var(--color-section-6);
+}
+main section#temporada-regular .content {
+    display: grid;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 100px 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: 800px;
+}
+main section#temporada-regular .content h1 {
+    font-size: 36px;
+    /* padding-left: 2%; */
+}
+main section#temporada-regular .content span p {
+    font-size: 16px;
+    color: var(--color-white);
+    font-weight: 600;
+}
+main section#temporada-regular .banner-temporada-regular {
+    border-radius: 20px;
+    
+}
+main section .banner-temporada-regular {
+    width: 30%;
+    margin: 120px 0;
+}
+
+/* SECAO PLAYOFFS */
+main section#playoffs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: var(--color-section-7);
+}
+main section#playoffs .content {
+    display: grid;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 100px 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: 800px;
+}
+main section#playoffs .content h1 {
+    font-size: 36px;
+    /* padding-left: 2%; */
+}
+main section#playoffs .content span p {
+    font-size: 16px;
+    font-weight: 600;
+}
+main section#playoffs .banner-playoffs {
+    border-radius: 20px;
+}
+main section .banner-playoffs {
+    width: 30%;
+    margin: 120px 0;
+}
+    
+/* SECAO FINAIS */
+main section#finais {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: var(--color-section-8);
+}
+main section#finais .content {
+    display: grid;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 100px 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: 800px;
+}
+main section#finais .content h1 {
+    font-size: 36px;
+    /* padding-left: 2%; */
+}
+main section#finais .content span p {
+    font-size: 16px;
+    font-weight: 600;
+}
+main section#finais .banner-finais {
+    border-radius: 20px;
+    
+}
+main section .banner-finais {
+    width: 30%;
+    margin: 120px 0;
+}
+
+/* SECAO MAIOR CAMPEAO */
+main section#maior-campeao {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: var(--color-section-9);
+}
+main section#maior-campeao .content, .boston {
+    display: grid;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 100px 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: 800px;
+}
+main section#maior-campeao .content h1 {
+    font-size: 36px;
+    /* padding-left: 2%; */
+}
+main section#maior-campeao .content span p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+#maior-campeao a {
+    color: var(--color-black);
+}
+main section#maior-campeao .banner-maior-campeao {
+    border-radius: 20px;
+    
+}
+main section .banner-maior-campeao {
+    width: 100%;
+    margin: 120px 0 0;
+}
+.boston {
+    display: flex;
+    width: 650px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.boston p {
+    margin-bottom: 120px;
+}
+
+
+/* SECAO PREMIOS */
+main section#premios {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    background-color: var(--color-section-10);
+}
+main section#premios .content {
+    display: grid;
+    margin: 50px 0;
+    gap: 20px;
+    padding: 100px 0 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: inherit;
+}
+main section#premios .content h1 {
+    font-size: 36px;
+    /* padding-left: 2%; */
+}
+main section#premios .content span p {
+    font-size: 16px;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+main section#premios .content span ul  {
+    display: grid;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 5%;
+    gap: 10px;
+    color: var(--color-white);
+}
+main section#premios .banner-premios {
+    border-radius: 20px;
+    width: 50%;
+}
+main section .banner-premios{
+    margin: 0 0 120px 0;
+}
+
+/* SECAO ALL-STAR */
+main section#all-star {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    background-color: var(--color-section-11);
+}
+main section#all-star .content {
+    display: grid;
+    margin: 50px 0;
+    gap: 20px;
+    padding: 100px 0 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: inherit;
+}
+main section#all-star .content h1 {
+    font-size: 36px;
+    /* padding-left: 2%; */
+}
+main section#all-star .content span p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-cavs);
+}
+
+main section#all-star .content span ul  {
+    display: grid;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 5%;
+    gap: 10px;
+}
+main section#all-star .banners-all-star {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 6fr;
+    align-items: center;
+    padding: 25px;
+}
+
+/* SECAO COLLABS */
+main section#collabs {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-around;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+main section#collabs .content {
+    display: grid;
+    margin: 50px 0;
+    gap: 20px;
+    padding: 100px 0 0; 
+    text-align: justify;
+    font-family: "Graduate", serif;
+    width: inherit;
+}
+main section#collabs .content h1 {
+    font-size: 36px;
+    /* padding-left: 2%; */
+}
+main section#collabs .content span p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+main section#collabs .content span ul  {
+    display: grid;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 5%;
+    gap: 10px;
+}
+main section#collabs img {
+    width: 50%;
+}
+
+/* RODAPE */
+footer p {
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 30px;
+    justify-content: center;
+    font-family: "Graduate", serif;
+    width: 100%;
+    height: inherit;
+    background-color: var(--color-section-8);
+}
+/* RESPONSIVO */
+
+/* ESCONDE O MENU DESKTOP */
+@media screen and (max-width: 1440px) {
+    .menu-desktop {
+        display: none;
+    }
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 942px) {
+    .menu-mobile.abrir-menu {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 942px) {
+
+    /* RESPONSIVO SECAO HISTORIA */
+    main section .banner-historia-liga {
+        width: 80%;
+    }
+    main section#historia-da-liga {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#historia-da-liga .banner-historia-liga{
+        padding: 0 70px;
+    }
+    main section#historia-da-liga .content {
+        padding: 0 24px 30px;
+        margin: 0;
+    }
+    main section#historia-da-liga .content span p {
+        font-weight: 500;
+    }
+
+    /* RESPONSIVO SECAO CONFERENCIA */
+    main section .banner-conferencia {
+        width: 55%;
+        margin-bottom: 0;
+    }
+    main section#conferencias-e-franquias {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#conferencias-e-franquias .content {
+        padding: 0 24px 30px;
+        width: fit-content;
+    }
+    main section#conferencias-e-franquias .content span p {
+        font-weight: 100;
+    } 
+
+    /* RESPONSIVO SECAO DRAFT */
+    main section .banner-draft {
+        width: 90%;
+        margin-bottom: 0;
+    }
+    main section#draft {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#draft .content {
+        padding: 0 24px 30px;
+        width: fit-content;
+    }
+    main section#draft .content span p {
+        font-weight: 100;
+    }
+
+    main .banner-competicao h1 {
+        font-size: 24px;
+    }
+    /* RESPONSIVO SECAO TEMPORADA REGULAR */
+    main section .banner-temporada-regular {
+        width: 90%;
+        margin-bottom: 0;
+    }
+    main section#temporada-regular {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#temporada-regular .content {
+        padding: 0 24px 30px;
+        width: fit-content;
+    }
+    main section#temporada-regular .content span p {
+        font-weight: 100;
+    }
+
+    /* RESPONSIVO SECAO PLAYOFFS */
+    main section .banner-playoffs {
+        width: 90%;
+        margin-bottom: 0;
+    }
+    main section#playoffs {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#playoffs .content {
+        padding: 0 24px 30px;
+        width: fit-content;
+    }
+    main section#playoffs .content span p {
+        font-weight: 100;
+    }
+
+    /* RESPONSIVO SECAO FINAIL */
+    main section .banner-finais {
+        width: 70%;
+        margin-bottom: 0;
+    }
+    main section#finais {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#finais .content {
+        padding: 0 24px 30px;
+        width: fit-content;
+    }
+    main section#finais .content span p {
+        font-weight: 100;
+    }
+
+    /* RESPONSIVO SECAO MAIOR CAMPEAO */
+    main section .banner-maior-campeao {
+        width: 70%;
+        margin-bottom: 0;
+    }
+    main section#maior-campeao {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#maior-campeao .content {
+        padding: 0 24px 30px;
+        width: fit-content;
+    }
+    main section#maior-campeao .content span p {
+        font-weight: 100;
+    }
+    .boston {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+        width: 100%;
+    }
+    .boston p {
+        margin-bottom: 0;
+        padding: 5px 10px;
+        width: 76%;
+    }
+    .boston img {
+        width: 100%;
+    }
+
+    /* RESPONSIVO SECAO PREMIOS */
+    main section .banner-premios {
+        width: 70%;
+        margin-bottom: 0;
+        margin-top: 120px;
+    }
+    main section#premios {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#premios .content {
+        padding: 0 24px 30px;
+        width: fit-content;
+    }
+    main section#premios .content span p {
+        font-weight: 100;
+    }
+
+    /* RESPONSIVO SECAO ALL-STAR */
+    main section#all-star {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#all-star .content {
+        padding: 0 24px 30px;
+        width: fit-content;
+    }
+    main section#all-star .content span p {
+        font-weight: 100;
+    }
+
+    /* RESPONSIVO SECAO COLLABS */
+    main section#collabs {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+        gap: 0px;
+    }
+    main section#collabs .content {
+        padding: 0 24px;
+        margin: 0;
+        width: fit-content;
+    }
+    main section#collabs .content h1 {
+        margin: 120px 0 0 0;
+    }
+    main section#collabs .content span p {
+        font-weight: 100;
+    }
+    main section#collabs img {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 14px;
+        height: inherit;
+        text-align: center;
+        padding: 20px 10%;
+    }
+    footer img {
+        width: 100%;
+    }
+}
